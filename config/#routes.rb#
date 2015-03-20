@@ -1,0 +1,7 @@
+Rails.application.routes.draw do
+  path '/pokemon
+
+  root to: 'home#index'
+  devise_for :trainers
+  resources :trainers
+end
